@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+
+#Particle compile directory
+/target/
+/lib/
+
+.DS_Store
+.vscode
