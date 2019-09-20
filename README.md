@@ -1,6 +1,9 @@
 # Brew-Monitor
 Particle IO project to use a Dallas DS18B20 temperature sensor to remotely monitor a fermenting home brew
 
+## Use
+View the monitor [here](https://collindietz.github.io/Brew-Monitor/index.html) on Github Pages
+
 ## Hardware
 This project was built using the following pieces of hardware
 - [Particle Photon](https://store.particle.io/products/photon)
