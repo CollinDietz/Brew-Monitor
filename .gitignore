@@ -30,11 +30,13 @@
 *.exe
 *.out
 *.app
+*.bin
 
 
 #Particle compile directory
 /target/
 /lib/
+/src/BrewMonitor.cpp
 
 .DS_Store
 .vscode
