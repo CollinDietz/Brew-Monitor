@@ -15,7 +15,7 @@ double history[historyRecordsMax];
 const int spacePerHistoryEntry = 6;
 char historyString[historyRecordsMax * spacePerHistoryEntry];
 const system_tick_t pollPeriod = 250;
-const system_tick_t pollPeriodForHistory = 60000;
+const system_tick_t pollPeriodForHistory = 600000;
 system_tick_t timeOfLastRead = 0;
 system_tick_t timeOfLastReadForHistory = 0;
 

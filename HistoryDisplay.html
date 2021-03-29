@@ -25,10 +25,10 @@
             dataTable.addColumn('number', 'timestamp');
             dataTable.addColumn('number', 'temp');
 
-            var i = -data.length;
+            var i = -10 * data.length;
             data.forEach(element => {
                 dataTable.addRow([i, parseFloat(element)]);
-                i++;
+                i += 10;
             });
 
             var options = {
