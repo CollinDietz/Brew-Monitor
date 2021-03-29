@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <header>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="dash.css">
-  <script src="dash.js"></script>
-
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <title>Brew Monitor Dashboard</title>
 </header>
 
 <body>
-  <div class="text-center text-white vertical-center">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1 class="display-1">&#x1F37A;</h1>
-        </div>
-        <div class="col-6">
-          <h2>The current temperature of your brew is:</h2>
-          <h1 id="temp" class="display-1">?</h1>
-          <h3 id="timestamp"> Last updated: ? </h3>
-        </div>
-        <div class="col">
-          <h1 class="display-1">&#x1F37A;</h1>
-        </div>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">History</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <div class="vertical-center horizontal-center iframe-container">
+        <iframe src="./CurrentTempDisplay.html"></iframe>
+      </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <div class="vertical-center horizontal-center iframe-container">
+        <iframe src="./HistoryDisplay.html"></iframe>
       </div>
     </div>
   </div>
 </body>
+
+
